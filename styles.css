@@ -1,0 +1,67 @@
+body {
+	max-width: 90%;
+	margin: 10px auto 0 auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+main {
+	display: flex;
+}
+
+div {
+	border: 2px solid black;
+}
+
+.header {
+	display: flex;
+	background-color: blue;
+	justify-content: space-between;
+	align-items: center;
+	/* border: 2px solid black; */
+}
+
+.logoBox, .profile {
+	/* max-width: 25%; */
+	flex: 1;
+	text-align: center;
+}
+
+.logo {
+	/* width:75%; */
+}
+
+.search {
+	/* max-width: 50%; */
+	flex: 2;
+	text-align: center;
+}
+
+.profile {
+	background-color: yellow;
+}
+
+.profileIcon {
+	max-width: 25%;
+	border-radius: 50%;
+}
+
+.mainBox1, .mainxBox3 {
+	flex: 1;
+	min-width: 12.5%; /*forcing consistent sizing*/
+}
+
+.mainBox2 {
+	flex: 3;
+}
+
+.navigation a {
+	display: block;
+}
+
+.adspace {
+	border: 1px solid gray;
+	margin: 5px;
+}
