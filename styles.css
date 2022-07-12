@@ -1,67 +1,184 @@
-body {
-	max-width: 90%;
-	margin: 10px auto 0 auto;
+/* resets */
+* {
+	box-sizing: border-box;
+}
+li{
+	list-style:none;
+	padding: 0;
+	margin: 0;
+	margin-left: -2em;
+}
+h1,h2,h3,h4,h5{
+	font-weight: 400;
+	font-size: 1em;
+	padding: 0;
+	margin: 0;
 }
 
+/* element-wide adjustements */
+:root{
+	--primary-yellow: #ffd23c;
+	--accent-yellow: #b2932a;
+	--primary-blue: #81a4cf;
+	--heading-blue: #09376f;
+	--bgc: #f5f5ee;
+}
+
+body {
+	margin: 0 auto 0 auto;
+	background-color: var(--bgc);
+	font-size: 1.25em;
+}
+h2{
+	font-size: 1.5em;
+	font-weight: 600;
+	margin-bottom: 0.25em;
+	color: var(--heading-blue);
+}
+a, a:visited{
+	text-decoration: none;
+	color: var(--accent-yellow);
+	font-weight: bold;
+}
+a:hover {
+	color: var(--primary-yellow);
+}
 img {
 	max-width: 100%;
 }
-
-main {
-	display: flex;
+hr{
+	border: none;
+	background-color: #cdcbcb;
+	height: 1px;
 }
 
-div {
-	border: 2px solid black;
-}
 
+/* class adjustments */
 .header {
 	display: flex;
-	background-color: blue;
 	justify-content: space-between;
 	align-items: center;
 	/* border: 2px solid black; */
+	gap: 1em;
+	background-image: url(images/WVOw61D.webp);
+	background-color: var(--primary-yellow);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:6em;
 }
 
-.logoBox, .profile {
-	/* max-width: 25%; */
+.logoBox {
 	flex: 1;
 	text-align: center;
 }
-
-.logo {
-	/* width:75%; */
+.profile{
+	flex: 1;
+	text-align:center;
 }
 
 .search {
-	/* max-width: 50%; */
-	flex: 2;
+	flex: 3;
 	text-align: center;
+}
+.searchbar{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.searchbar div{
+	display: inline;
+	border-radius: 50%;
+	padding: 15px 10px 6px 10px;
+}
+.searchIconDiv{
+	background-color: var(--primary-blue);
+}
+
+#searchField{
+	background-color: white;
+	border: none;
+	height: 2em;
+	padding-inline: 0.5em;
+	border-radius: 7px;;
+
+}
+.searchIcon{
+	width:20px;
 }
 
 .profile {
-	background-color: yellow;
+	position: relative;
+	display: inline-block;
 }
+.profile:hover #profileMenu {display: block;}
+.profile:hover .profileIcon {background-color: var(--primary-blue);} 
 
 .profileIcon {
-	max-width: 25%;
-	border-radius: 50%;
+	width: 25%;
+	/* border-radius: 50%; */
+	cursor: pointer;
+	padding: 0.25em;
+}
+#profileMenu{
+	display:none;
+	position: absolute;
+	background-color: #fff;
+	z-index: 1;
+	min-width: 10rem;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	text-align: right;
+	padding-inline: 1rem;
+	right:0;
 }
 
-.mainBox1, .mainxBox3 {
-	flex: 1;
-	min-width: 12.5%; /*forcing consistent sizing*/
-}
 
+.mainBox {
+	display: flex;
+	justify-content: space-between;
+	margin: 1em 1em 0 1em;
+}
+.mainBox1 {
+	background-color: #fff;
+	padding: 1em;
+}
+.mainBox1 li{
+	margin-top: 0.25em;
+}
 .mainBox2 {
-	flex: 3;
+	/* margin: 0 1em; */
+	display: block;
+	flex-basis: 65%;
+	flex-shrink: 0;
+	background-color: #fff;
+	padding: 3em 3em;
 }
-
+.mainBox2 > div {
+	padding-top: 1em;
+}
+.postImage{
+	margin: 0 2em 0 0;
+}
+.postImage img{
+	max-width: 3em;
+	float:right;
+}
+.clear{
+	clear: both;
+}
+.post{
+	display:inline;
+}
+.mainBox1, .mainBox3 {
+	flex: 0 0 auto;
+	width: 15%
+}
 .navigation a {
 	display: block;
 }
-
 .adspace {
-	border: 1px solid gray;
-	margin: 5px;
+	background-color: #efefef;
+	margin: 0 auto;
+	text-align: center;
+	padding: 5em 2em;
 }

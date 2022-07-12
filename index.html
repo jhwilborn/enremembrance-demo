@@ -7,6 +7,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>enRemembrance Home | Community, Culture, Memory</title>
 		<link rel="stylesheet" href="styles.css">
+		<script>
+			function profileMenuOn() {
+				document.getElementById("profileMenu").style.display = "block";
+			}
+
+			function profileMenuOff() {
+				document.getElementById("profileMenu").style.display = "none";
+			}
+		</script>
 	</head>
 
 	<body>
@@ -19,49 +28,101 @@
 
 			</div>
 
-			<div class="search">Search</div>
-
-			<div class="profile">
-				<img src="/images/profileicon.png" alt="Profile Icon" class="profileIcon">
+			<div class="search">
+				<div class="searchbar">
+					<form action="" method="get">
+						<div>
+							<input type="text" name="searchField" id="searchField" value="Search">
+						</div>
+						<div class="searchIconDiv">
+							<input type="image" src="/images/searchicon.png" alt="Search Icon" class="searchIcon">
+						</div>
+					</form>
+				</div>
 			</div>
+
+			<div id="profile" class="profile">
+				<img src="/images/profileicon.png" alt="Profile Icon" class="profileIcon" >
+				<div id="profileMenu">
+					<ul>
+						<li class="profileMenuItem"><a href="">Account</a></li>
+						<li class="profileMenuItem"><a href="">Help</a></li>
+						<li class="profileMenuItem"><a href="">Log Out</a></li>
+					</ul>
+				</div>
+			</div>
+			
 
 		</header>
 		<main>
+			<div class="mainBox">
+				<div class="mainBox1">
+					<nav class="navigation">
+						<ul class="navList" role="list">
+							<!-- role needed for safari to recongize list-->
+							<li class="navItem">
+								<a href="index.html" class="navLink">Home</a>
 
-			<div class="mainBox1">
-				<nav class="navigation">
-					<a href="index.html" class="navLink">Home</a>
-					<a href="" class="navLink"> About Us</a>
-					<a href="index.html" class="navLink"> Contact</a>
-					<a href="index.html" class="navLink"> Privacy & Terms and Conditions</a>
-					<a href="index.html" class="navLink"> Get Involved</a>
+							</li>
+							<li class="navItem">
+								<a href="about.html" class="navLink"> About Us</a>
 
-				</nav>
-			</div>
-			<div class="mainBox2">
-				<div class="post">
-					<strong>Lorem, ipsum dolor sit amet consectetur</strong><br> adipisicing elit. Labore rerum reprehenderit nulla corporis perspiciatis dolore laboriosam numquam quis soluta, quasi, qui, explicabo officia quaerat dolorum dolores debitis at. Facilis, hic!
-					<a href="index.html">...Read More</a>
-					<hr>
-				</div>
-				<div class="post">
-					<strong>Lorem, ipsum dolor sit amet consectetur</strong><br> adipisicing elit. Labore rerum reprehenderit nulla corporis perspiciatis dolore laboriosam numquam quis soluta, quasi, qui, explicabo officia quaerat dolorum dolores debitis at. Facilis, hic!
-					<a href="index.html">...Read More</a>
-					<hr>
-				</div>
-				<div class="post">
-					<strong>Lorem, ipsum dolor sit amet consectetur</strong><br> adipisicing elit. Labore rerum reprehenderit nulla corporis perspiciatis dolore laboriosam numquam quis soluta, quasi, qui, explicabo officia quaerat dolorum dolores debitis at. Facilis, hic!
-					<a href="index.html">...Read More</a>
-					<hr>
-				</div>
-			</div>
-			<div class="mainBox3">
-				<div class="adspace">
-					ADVERTISEMENT
-				</div>
-				
-			</div>
+							</li>
+							<li class="navItem">
+								<a href="contact.html" class="navLink"> Contact</a>
 
+							</li>
+							<li class="navItem">
+								<a href="privacy.html" class="navLink"> Privacy</a>
+
+							</li>
+							<li class="navItem">
+								<a href="tandc.html" class="navLink">Terms and Conditions</a>
+
+							</li>
+							<li class="navItem">
+								<a href="getinvolved.html" class="navLink"> Get Involved</a>
+
+							</li>
+						</ul>
+
+					</nav>
+				</div>
+				<div class="mainBox2">
+					<div class="post">
+						<div class="postImage">
+							<img src="/images/profileicon.png" alt="Post Image">
+						</div>
+						<div class="postBody">
+							<h2>Lorem, ipsum dolor sit amet consectetur</h2> adipisicing elit. Labore rerum reprehenderit nulla corporis perspiciatis dolore laboriosam numquam quis soluta, quasi, qui, explicabo officia quaerat dolorum dolores debitis at. Facilis, hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab pariatur excepturi, quisquam iste laborum nam esse animi rerum fugit perferendis veniam optio! Sunt unde minus rerum harum molestiae minima voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deleniti sapiente consequuntur quod officia nam et earum dolorum deserunt sed? Consectetur illum magnam ipsum maxime minus blanditiis sunt doloribus ullam?
+							<a href="index.html">...Read More</a>
+						</div>
+
+						<div class="clear"></div>
+
+						<hr>
+					</div>
+					<div class="post">
+						<h2>Lorem, ipsum dolor sit amet consectetur</h2> adipisicing elit. Labore rerum reprehenderit nulla corporis perspiciatis dolore laboriosam numquam quis soluta, quasi, qui, explicabo officia quaerat dolorum dolores debitis at. Facilis, hic!
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, hic accusamus? Iusto necessitatibus eaque molestias placeat labore sunt ipsa modi rem inventore minima natus beatae asperiores fugit id, hic debitis?
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, excepturi saepe! Quae, et, quis architecto quaerat totam voluptatibus voluptate fuga quia sapiente, repudiandae atque dicta? Nihil veniam quo porro. Temporibus!
+						<a href="index.html">...Read More</a>
+						<hr>
+					</div>
+					<div class="post">
+						<h2>Lorem, ipsum dolor sit amet consectetur</h2> adipisicing elit. Labore rerum reprehenderit nulla corporis perspiciatis dolore laboriosam numquam quis soluta, quasi, qui, explicabo officia quaerat dolorum dolores debitis at. Facilis, hic!
+						<a href="index.html">...Read More</a>
+						<hr>
+					</div>
+				</div>
+				<div class="mainBox3">
+					<div class="adspace">
+						<div class="adtext">AD SPACE</div>
+					</div>
+
+
+				</div>
+			</div>
 		</main>
 
 	</body>
