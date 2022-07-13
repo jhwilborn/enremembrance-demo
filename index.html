@@ -10,7 +10,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-		
+
 	</head>
 
 	<body>
@@ -46,7 +46,7 @@
 
 		</header>
 		<main>
-			<div class="mainBox">
+			<section class="mainBox">
 				<div class="mainBox1">
 					<div class="mobileNav">
 						<button id="mobileButton" onclick="switchNav()" class="mobileButton"><img src="/images/menu.png" alt="Menu Button"></button>
@@ -76,15 +76,22 @@
 
 					</nav>
 				</div>
-				<div class="mainBox2">
+				<section class="mainBox2">
 					<div class="post">
-						<div class="postImage">
-							<img src="/images/profileicon.png" alt="Post Image">
-						</div>
-						<div class="postBody">
-							<h2>Spotlight: Being there made him my hero</h2>
-							<h3>Author: Jamie Wilkins</h3>
-							adipisicing elit. Labore rerum reprehenderit nulla corporis perspiciatis dolore laboriosam numquam quis soluta, quasi, qui, explicabo officia quaerat dolorum dolores debitis at. Facilis, hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab pariatur excepturi, quisquam iste laborum nam esse animi rerum fugit perferendis veniam optio! Sunt unde minus rerum harum molestiae minima voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deleniti sapiente consequuntur quod officia nam et earum dolorum deserunt sed? Consectetur illum magnam ipsum maxime minus blanditiis sunt doloribus ullam?
+						<div>
+							<div class="postHead">
+								<div class="postTitle">
+									<h2>Spotlight: Being there made him my hero</h2>
+									<h3>Author: Jamie Wilkins</h3>
+								</div>
+								<div class="postImage">
+									<img src="/images/profileicon.png" alt="Post Image">
+									<p class="caption">James Wilkins Sr.</p>
+								</div>
+							</div>
+							<div class="postBody">
+								adipisicing elit. Labore rerum reprehenderit nulla corporis perspiciatis dolore laboriosam numquam quis soluta, quasi, qui, explicabo officia quaerat dolorum dolores debitis at. Facilis, hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab pariatur excepturi, quisquam iste laborum nam esse animi rerum fugit perferendis veniam optio! Sunt unde minus rerum harum molestiae minima voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deleniti sapiente consequuntur quod officia nam et earum dolorum deserunt sed? Consectetur illum magnam ipsum maxime minus blanditiis sunt doloribus ullam?
+							</div>
 							<a href="index.html">...Read More</a>
 						</div>
 
@@ -103,8 +110,8 @@
 						<a href="index.html">...Read More</a>
 						<hr>
 					</div>
-				</div>
-				<div class="mainBox3">
+				</section>
+				<section class="mainBox3">
 					<div class="adspace">
 						<div class="adtext">AD SPACE</div>
 					</div>
@@ -114,8 +121,8 @@
 					<div class="adspace">
 						<div class="adtext">AD SPACE</div>
 					</div>
-				</div>
-			</div>
+				</section>
+			</section>
 		</main>
 		<script>
 			function switchNav() {
@@ -146,8 +153,6 @@
 			var sn = window.matchMedia("(max-width: 800px)")
 			smallNav(sn) // Call listener function at run time
 			sn.addListener(smallNav) // Attach lis
-
-
 		</script>
 	</body>
 
