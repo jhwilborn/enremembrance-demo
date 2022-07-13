@@ -98,11 +98,21 @@ hr {
 .logoBox {
 	width: 16.5%;
 	margin-left: 1rem;
+	/* z-index: 1; */
+
+}
+.logoLink{
+	height: 100%;
+	display: block;
+
+}
+.newline{
+	display:none;
 }
 
 .logoBox img {
-	max-height: 100%;
-	scale: 0.80;
+	max-height: 3rem;
+
 }
 
 .profile {
@@ -217,7 +227,7 @@ hr {
 	flex-basis: 65%;
 	flex-shrink: 0;
 	background-color: #fff;
-	padding: 1em 3em;
+	padding: 1em 2.5em;
 }
 
 .mainBox2>div {
@@ -281,27 +291,34 @@ hr {
 		margin-bottom: 2rem;
 		height: auto;
 	}
+	.newline{
+		display: block;
+	}
+	.header{
+		gap: 0;
+		margin-bottom: 0;
+	}
 
-	.logoBox, .searchbox, .profile {
+	.logoBox, .newline, .searchbox {
 		width: 100%;
 		display: block;
-		max-height: 3rem;
+		/* max-height: 3rem; */
 		padding: 0;
 		margin: 0;
-		margin-bottom: 2rem;
+		/* margin: 1rem; */
+		/* margin-bottom: 2rem; */
 	}
 
 	.logoBox, .searchbox {
 		text-align: center;
 	}
-
-	.logoBox img {
-		max-height: 5rem;
-		margin-top: 1rem;
+	.logoBox{
+		margin-top: 2rem;
 	}
 
 	.searchbox {
 		margin-inline: 2rem;
+		margin-block: 1rem;
 	}
 
 	.profile {
@@ -312,11 +329,13 @@ hr {
 	}
 
 	.postImage {
-		display: none;
+		/* display: none; */
+		margin: 1rem 1rem 0 0;
 	}
 
 	.mainBox {
 		flex-wrap: wrap;
+		margin: 0 0.25rem;
 	}
 
 	.mainBox1, .mainBox2, .mainBox3 {
@@ -336,6 +355,8 @@ hr {
 
 	.mainBox2 {
 		order: 3;
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 
 	.mainBox3 {
