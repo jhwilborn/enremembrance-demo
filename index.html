@@ -7,15 +7,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>enRemembrance Home | Community, Culture, Memory</title>
 		<link rel="stylesheet" href="styles.css">
-		<script>
-			function profileMenuOn() {
-				document.getElementById("profileMenu").style.display = "block";
-			}
-
-			function profileMenuOff() {
-				document.getElementById("profileMenu").style.display = "none";
-			}
-		</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		
 	</head>
 
 	<body>
@@ -28,61 +23,54 @@
 
 			</div>
 
-			<div class="search">
-				<div class="searchbar">
-					<form action="" method="get">
-						<div>
-							<input type="text" name="searchField" id="searchField" value="Search">
-						</div>
-						<div class="searchIconDiv">
-							<input type="image" src="/images/searchicon.png" alt="Search Icon" class="searchIcon">
-						</div>
-					</form>
-				</div>
+			<div class="searchbox">
+				<form action="" method="get">
+					<div class="search">
+						<input type="text" name="searchField" id="searchField" value="Search">
+						<button class="searchButton" type="submit"><img src="/images/searchicon.png" alt="Submit search button"></button>
+					</div>
+			</div>
+			</form>
+
+
 			</div>
 
-			<div id="profile" class="profile">
-				<img src="/images/profileicon.png" alt="Profile Icon" class="profileIcon" >
-				<div id="profileMenu">
-					<ul>
-						<li class="profileMenuItem"><a href="">Account</a></li>
-						<li class="profileMenuItem"><a href="">Help</a></li>
-						<li class="profileMenuItem"><a href="">Log Out</a></li>
-					</ul>
+			<div class="profile">
+				<button class="profileButton"> <img src="/images/profileicon.png" alt="Profile Icon"> </button>
+				<div class="profileMenu">
+					<a href="">Account</a>
+					<a href="">Help</a>
+					<a href="">Log Out</a>
 				</div>
 			</div>
-			
 
 		</header>
 		<main>
 			<div class="mainBox">
 				<div class="mainBox1">
-					<nav class="navigation">
+					<div class="mobileNav">
+						<button id="mobileButton" onclick="switchNav()" class="mobileButton"><img src="/images/menu.png" alt="Menu Button"></button>
+					</div>
+					<nav class="navigation" id="navigation">
 						<ul class="navList" role="list">
 							<!-- role needed for safari to recongize list-->
 							<li class="navItem">
 								<a href="index.html" class="navLink">Home</a>
-
 							</li>
 							<li class="navItem">
 								<a href="about.html" class="navLink"> About Us</a>
-
 							</li>
 							<li class="navItem">
 								<a href="contact.html" class="navLink"> Contact</a>
-
 							</li>
 							<li class="navItem">
 								<a href="privacy.html" class="navLink"> Privacy</a>
-
 							</li>
 							<li class="navItem">
-								<a href="tandc.html" class="navLink">Terms and Conditions</a>
-
+								<a href="tandc.html" class="navLink">Terms & Conditions</a>
 							</li>
 							<li class="navItem">
 								<a href="getinvolved.html" class="navLink"> Get Involved</a>
-
 							</li>
 						</ul>
 
@@ -94,7 +82,9 @@
 							<img src="/images/profileicon.png" alt="Post Image">
 						</div>
 						<div class="postBody">
-							<h2>Lorem, ipsum dolor sit amet consectetur</h2> adipisicing elit. Labore rerum reprehenderit nulla corporis perspiciatis dolore laboriosam numquam quis soluta, quasi, qui, explicabo officia quaerat dolorum dolores debitis at. Facilis, hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab pariatur excepturi, quisquam iste laborum nam esse animi rerum fugit perferendis veniam optio! Sunt unde minus rerum harum molestiae minima voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deleniti sapiente consequuntur quod officia nam et earum dolorum deserunt sed? Consectetur illum magnam ipsum maxime minus blanditiis sunt doloribus ullam?
+							<h2>Spotlight: Being there made him my hero</h2>
+							<h3>Author: Jamie Wilkins</h3>
+							adipisicing elit. Labore rerum reprehenderit nulla corporis perspiciatis dolore laboriosam numquam quis soluta, quasi, qui, explicabo officia quaerat dolorum dolores debitis at. Facilis, hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab pariatur excepturi, quisquam iste laborum nam esse animi rerum fugit perferendis veniam optio! Sunt unde minus rerum harum molestiae minima voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deleniti sapiente consequuntur quod officia nam et earum dolorum deserunt sed? Consectetur illum magnam ipsum maxime minus blanditiis sunt doloribus ullam?
 							<a href="index.html">...Read More</a>
 						</div>
 
@@ -103,14 +93,13 @@
 						<hr>
 					</div>
 					<div class="post">
-						<h2>Lorem, ipsum dolor sit amet consectetur</h2> adipisicing elit. Labore rerum reprehenderit nulla corporis perspiciatis dolore laboriosam numquam quis soluta, quasi, qui, explicabo officia quaerat dolorum dolores debitis at. Facilis, hic!
+						<h2>Celebrate your family: start here, with us</h2> adipisicing elit. Labore rerum reprehenderit nulla corporis perspiciatis dolore laboriosam numquam quis soluta, quasi, qui, explicabo officia quaerat dolorum dolores debitis at. Facilis, hic!
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, hic accusamus? Iusto necessitatibus eaque molestias placeat labore sunt ipsa modi rem inventore minima natus beatae asperiores fugit id, hic debitis?
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, excepturi saepe! Quae, et, quis architecto quaerat totam voluptatibus voluptate fuga quia sapiente, repudiandae atque dicta? Nihil veniam quo porro. Temporibus!
 						<a href="index.html">...Read More</a>
 						<hr>
 					</div>
 					<div class="post">
-						<h2>Lorem, ipsum dolor sit amet consectetur</h2> adipisicing elit. Labore rerum reprehenderit nulla corporis perspiciatis dolore laboriosam numquam quis soluta, quasi, qui, explicabo officia quaerat dolorum dolores debitis at. Facilis, hic!
+						<h2>Family Collections now available</h2> adipisicing elit. Labore rerum reprehenderit nulla corporis perspiciatis dolore laboriosam numquam quis soluta, quasi, qui, explicabo officia quaerat dolorum dolores debitis at. Facilis, hic!
 						<a href="index.html">...Read More</a>
 						<hr>
 					</div>
@@ -119,12 +108,47 @@
 					<div class="adspace">
 						<div class="adtext">AD SPACE</div>
 					</div>
-
-
+					<div class="adspace">
+						<div class="adtext">AD SPACE</div>
+					</div>
+					<div class="adspace">
+						<div class="adtext">AD SPACE</div>
+					</div>
 				</div>
 			</div>
 		</main>
+		<script>
+			function switchNav() {
+				const nav = document.getElementById("navigation");
+				if (nav.style.display === "block") {
+					nav.style.display = "none";
+				} else {
+					nav.style.display = "block";
+				}
+			}
 
+			function bigNav(bn) {
+				if (bn.matches) { // If media query matches
+					document.getElementById("navigation").style.display = "block";
+				}
+			}
+
+			var bn = window.matchMedia("(min-width: 800px)")
+			bigNav(bn) // Call listener function at run time
+			bn.addListener(bigNav) // Attach listener function on state changes 
+
+			function smallNav(sn) {
+				if (sn.matches) { // If media query matches
+					document.getElementById("navigation").style.display = "none";
+				}
+			}
+
+			var sn = window.matchMedia("(max-width: 800px)")
+			smallNav(sn) // Call listener function at run time
+			sn.addListener(smallNav) // Attach lis
+
+
+		</script>
 	</body>
 
 </html>
