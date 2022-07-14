@@ -33,17 +33,16 @@
 					</div>
 				</form>
 			</div>
-			
-
-
 			</div>
 
-			<div class="profile">
-				<button class="profileButton"> <img src="images/profileicon.png" alt="Profile Icon"> </button>
-				<div class="profileMenu">
-					<a href="">Account</a>
-					<a href="">Help</a>
-					<a href="">Log Out</a>
+			<div>
+				<div class="profile">
+					<button class="profileButton"> <img src="images/profileicon.png" alt="Profile Icon"> </button>
+					<div class="profileMenu">
+						<a href="">Account</a>
+						<a href="">Help</a>
+						<a href="">Log Out</a>
+					</div>
 				</div>
 			</div>
 
@@ -52,7 +51,7 @@
 			<section class="mainBox">
 				<div class="mainBox1">
 					<div class="mobileNav">
-						<button id="mobileButton" onclick="switchNav()" class="mobileButton"><img src="images/menu.png" alt="Menu Button"></button>
+						<button id="mobileButton" onclick="switchNav();" class="mobileButton"><img src="images/menu.png" alt="Menu Button"></button>
 					</div>
 					<nav class="navigation" id="navigation">
 						<ul class="navList" role="list">
@@ -70,7 +69,7 @@
 								<a href="privacy.html" class="navLink"> Privacy</a>
 							</li>
 							<li class="navItem">
-								<a href="tandc.html" class="navLink">Terms & Conditions</a>
+								<a href="tandc.html" class="navLink">Terms of Use</a>
 							</li>
 							<li class="navItem">
 								<a href="getinvolved.html" class="navLink"> Get Involved</a>
@@ -145,6 +144,7 @@
 					document.getElementById("navigation").style.display = "block";
 				}
 			}
+	
 
 			var bn = window.matchMedia("(min-width: 800px)")
 			bigNav(bn) // Call listener function at run time
@@ -155,7 +155,6 @@
 					document.getElementById("navigation").style.display = "none";
 				}
 			}
-
 			var sn = window.matchMedia("(max-width: 800px)")
 			smallNav(sn)
 			sn.addListener(smallNav)

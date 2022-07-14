@@ -82,7 +82,8 @@ hr {
 }
 
 footer {
-	margin: 1rem; text-align: center;
+	margin: 1rem;
+	text-align: center;
 }
 
 
@@ -119,7 +120,7 @@ footer {
 }
 
 .logoBox img {
-	max-height: 3rem;
+	max-height: 5rem;
 
 }
 
@@ -250,7 +251,7 @@ footer {
 .postImage img {
 	max-width: 100%;
 	border: 1px solid var(--primary-blue);
-	background-color:var(--heading-blue)
+	background-color: var(--heading-blue)
 }
 
 .caption {
@@ -331,6 +332,10 @@ footer {
 		margin-top: 2rem;
 	}
 
+	.logoLink img {
+		max-height: 2.5rem;
+	}
+
 	.searchbox {
 		margin-inline: 2rem;
 		margin-block: 1rem;
@@ -397,6 +402,17 @@ footer {
 		background-color: var(--primary-yellow);
 		border: none;
 		cursor: pointer;
+		border-radius: 7px;
+	}
+
+	.mobileButton:hover {
+		background-color: #cca831;
+	}
+
+	.mobileButton:active {
+		box-shadow: 0 2px 3px  rgba(44, 42, 39, 0.4);
+		transform: translateY(2px);
+		scale: .98;
 	}
 
 	.mobileButton img {
