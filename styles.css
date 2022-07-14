@@ -34,7 +34,7 @@ p {
 :root {
 	--primary-yellow: #675218;
 	--fill-yellow: #ffd23c;
-	--accent-yellow: #b2932a;
+	--accent-yellow: #635117;
 	--primary-blue: #81a4cf;
 	--heading-blue: #09376f;
 	--bgc: #f5f5ee;
@@ -69,7 +69,7 @@ a, a:visited {
 }
 
 a:hover {
-	color: var(--primary-yellow);
+	color: var(--fill-yellow);
 }
 
 img {
@@ -128,7 +128,6 @@ footer {
 
 .searchbox {
 	width: 45%;
-	margin-left: 1rem;
 }
 
 
@@ -145,6 +144,9 @@ footer {
 	border-radius: 10px;
 	flex-grow: 1;
 	color: gray;
+}
+.search label{
+	display:none;
 }
 
 .searchButton {
