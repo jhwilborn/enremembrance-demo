@@ -16,10 +16,12 @@ h1, h2, h3, h4, h5 {
 	padding: 0;
 	margin: 0;
 }
-p{
+
+p {
 	margin: 0;
 	padding: 0;
 }
+
 .display {
 	display: block;
 }
@@ -79,6 +81,10 @@ hr {
 	height: 1px;
 }
 
+footer {
+	margin: 1rem; text-align: center;
+}
+
 
 /* class adjustments */
 .header {
@@ -101,13 +107,15 @@ hr {
 	/* z-index: 1; */
 
 }
-.logoLink{
+
+.logoLink {
 	height: 100%;
 	display: block;
 
 }
-.newline{
-	display:none;
+
+.newline {
+	display: none;
 }
 
 .logoBox img {
@@ -242,9 +250,10 @@ hr {
 .postImage img {
 	max-width: 100%;
 	border: 1px solid var(--primary-blue);
+	background-color:var(--heading-blue)
 }
 
-.caption{
+.caption {
 	font-size: 0.5em;
 	color: #38414e
 }
@@ -253,16 +262,19 @@ hr {
 	display: inline;
 	font-size: 1.1em;
 }
-.postHead{
-	display:flex;
+
+.postHead {
+	display: flex;
 	justify-content: space-between;
 
 }
-.postTitle{
+
+.postTitle {
 	max-width: 80%;
 	margin-top: 1rem;
 }
-.postImage{
+
+.postImage {
 	margin-bottom: 1rem;
 }
 
@@ -291,10 +303,12 @@ hr {
 		margin-bottom: 2rem;
 		height: auto;
 	}
-	.newline{
+
+	.newline {
 		display: block;
 	}
-	.header{
+
+	.header {
 		gap: 0;
 		margin-bottom: 0;
 	}
@@ -312,7 +326,8 @@ hr {
 	.logoBox, .searchbox {
 		text-align: center;
 	}
-	.logoBox{
+
+	.logoBox {
 		margin-top: 2rem;
 	}
 
@@ -343,7 +358,10 @@ hr {
 		flex-basis: 100%;
 	}
 
-	.mainBox1{background: none;}
+	.mainBox1 {
+		background: none;
+	}
+
 	.navigation {
 		text-align: center;
 	}

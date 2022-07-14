@@ -4,9 +4,9 @@ import classNames from 'classnames/bind';
 
 let cx = classNames.bind(styles)
 
-const ButtonImg = ({imgName, /* bgcolor, */ clickHandler, type}) => {
+const ButtonImg = ({imgName, /* bgcolor, */ clickHandler, type, width, height}) => {
 	let buttonClasses = cx({
-		buttonimg : true,
+		buttonImg : true,
 		[`${imgName}`] : imgName,
 		[`${type}`] : type
 		// [`${bgcolor}`] : bgcolor
@@ -15,13 +15,12 @@ const ButtonImg = ({imgName, /* bgcolor, */ clickHandler, type}) => {
 		className={buttonClasses}
 		onClick={clickHandler}
 	>
-		<Image>			
+		<Image			
 			src={`/images/${imgName}.${type}`}
 			alt={`${imgName} button`}
-			width="36"
-			height="36"
-
-		</Image>
+			width={width}
+			height={height}
+			/>
 	</button>
 }
 export default ButtonImg;

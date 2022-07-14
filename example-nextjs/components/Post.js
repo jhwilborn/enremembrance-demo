@@ -11,16 +11,30 @@ const Post = () => {
 		<div className={styles.post}>
 			<div className={styles.titlebar}>
 				<div className={styles.title}>
-					
+					<Heading level="2">Share your story</Heading>
+					<Heading level="3">Post by jon do</Heading>
 				</div>
 				<div className={styles.image}>
-
+					<Image
+						src="/images/profile.png"
+						alt="alttext"
+						width="50"
+						height="50"
+					/>
 				</div>
 			</div>
 			<div className={styles.content}>
-
+				<Paragraph>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					Ullam sed cupiditate consectetur hic corrupti voluptates
+					cumque sit? Deleniti cumque sint, dolor hic perspiciatis
+					ipsum obcaecati praesentium, facilis temporibus nobis
+					dignissimos! Lorem ipsum dolor sit amet consectetur
+					adipisicing elit. Dolor nemo reiciendis cupiditate odit fuga
+					eos perferendis aut quidem ipsa perspiciatis impedit dolorum
+					adipisci illo quo non molestias, rem nostrum qui!
+				</Paragraph>
 			</div>
-
 
 			{/* <Row>
 				<Column>

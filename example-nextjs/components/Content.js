@@ -1,16 +1,17 @@
 import Row from "./Row";
 import Column from "./Column";
-import Post from './Post';
-
+import Feed from "./Feed";
 
 const Content = () => {
 	return (
 		<div>
 			<Row>
 				<Column>Col1</Column>
-				<Column>Col2</Column>
 				<Column>
-					<Post/>
+					<Feed feedType="post"/>
+				</Column>
+				<Column>
+					<Feed feedType="ad"/>
 				</Column>
 			</Row>
 		</div>
