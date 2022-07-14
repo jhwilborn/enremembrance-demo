@@ -14,7 +14,7 @@
 
 	</head>
 
-	<body>
+	<body onclick="clear()">
 		<header class="header">
 
 			<div class="logoBox">
@@ -38,7 +38,7 @@
 			<div>
 				<div class="profile">
 					<button class="profileButton"> <img src="images/profileicon.png" alt="Profile Icon"> </button>
-					<div class="profileMenu">
+					<div id="profileMenu" class="profileMenu">
 						<a href="">Account</a>
 						<a href="">Help</a>
 						<a href="">Log Out</a>
@@ -138,6 +138,11 @@
 					nav.style.display = "block";
 				}
 			}
+			function clear(){
+				const profileMenu = document.getElementById("profileMenu");
+				if (profileMenu.style.display === "block") {
+					profileMenu.style.display = "none";
+			}}
 
 			function bigNav(bn) {
 				if (bn.matches) { // If media query matches
