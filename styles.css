@@ -135,6 +135,7 @@ footer {
 
 .searchbox {
 	width: 45%;
+	margin-right: 1.5rem;
 }
 
 
@@ -340,6 +341,7 @@ footer {
 
 	.logoBox {
 		margin-top: 2rem;
+		margin-right: 1.5rem;
 	}
 
 	.logoLink img {
