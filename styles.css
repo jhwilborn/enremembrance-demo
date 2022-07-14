@@ -32,7 +32,8 @@ p {
 
 /* element-wide adjustements */
 :root {
-	--primary-yellow: #ffd23c;
+	--primary-yellow: #675218;
+	--fill-yellow: #ffd23c;
 	--accent-yellow: #b2932a;
 	--primary-blue: #81a4cf;
 	--heading-blue: #09376f;
@@ -396,7 +397,7 @@ footer {
 	.mobileButton {
 		width: 85%;
 		height: 3rem;
-		background-color: var(--primary-yellow);
+		background-color: var(--fill-yellow);
 		border: none;
 		cursor: pointer;
 		border-radius: 7px;

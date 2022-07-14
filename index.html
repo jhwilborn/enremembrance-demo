@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" href="images/icon.png"/>
+		<link rel="icon" href="images/icon.png" />
 		<title>enRemembrance Home | Community, Culture, Memory</title>
 		<link rel="stylesheet" href="styles.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
 		<header class="header">
 
 			<div class="logoBox">
-				<a href="index.html" class="logoLink">
+				<a href="index.html" class="logoLink" tabindex="0">
 					<img src="images/logo.webp" alt="enRemembrance Logo" class="logo">
 				</a>
 
@@ -28,20 +28,20 @@
 			<div class="searchbox">
 				<form action="" method="get">
 					<div class="search">
-						<input type="text" name="searchField" id="searchField" placeholder="Search"/>
-						<button class="searchButton" type="submit"><img src="images/searchicon.png" alt="Submit search button"></button>
+						<input type="text" name="searchField" id="searchField" placeholder="Search" tabindex="1" />
+						<button label="Search Button" tabindex="2" class="searchButton" type="submit"><img src="images/searchicon.png" alt="Submit search button"></button>
 					</div>
 				</form>
 			</div>
-			</div>
+
 
 			<div>
 				<div class="profile">
-					<button class="profileButton"> <img src="images/profileicon.png" alt="Profile Icon"> </button>
-					<div id="profileMenu" class="profileMenu">
-						<a href="">Settings</a>
-						<a href="">Help</a>
-						<a href="">Log Out</a>
+					<button class="profileButton" tabindex="3"> <img src="images/profileicon.png" alt="Profile Icon"> </button>
+					<div id="profileMenu" class="profileMenu" tabindex="4">
+						<a href="" tabindex="5">Settings</a>
+						<a href="" tabindex="6">Help</a>
+						<a href="" tabindex="7">Log Out</a>
 					</div>
 				</div>
 			</div>
@@ -50,36 +50,36 @@
 		<main>
 			<section class="mainBox">
 				<div class="mainBox1">
-					<div class="mobileNav">
+					<div class="mobileNav" tabindex="8">
 						<button id="mobileButton" onclick="switchNav();" class="mobileButton"><img src="images/menu.png" alt="Menu Button"></button>
 					</div>
-					<nav class="navigation" id="navigation">
+					<nav class="navigation" id="navigation" tabindex="9">
 						<ul class="navList" role="list">
 							<!-- role needed for safari to recongize list-->
 							<li class="navItem">
-								<a href="index.html" class="navLink">Home</a>
+								<a href="index.html" class="navLink" tabindex="10">Home</a>
 							</li>
 							<li class="navItem">
-								<a href="about.html" class="navLink"> About Us</a>
+								<a href="about.html" class="navLink" tabindex="11"> About Us</a>
 							</li>
 							<li class="navItem">
-								<a href="contact.html" class="navLink"> Contact</a>
+								<a href="contact.html" class="navLink" tabindex="12"> Contact</a>
 							</li>
 							<li class="navItem">
-								<a href="privacy.html" class="navLink"> Privacy</a>
+								<a href="privacy.html" class="navLink" tabindex="13"> Privacy</a>
 							</li>
 							<li class="navItem">
-								<a href="tandc.html" class="navLink">Terms of Use</a>
+								<a href="tandc.html" class="navLink" tabindex="14">Terms of Use</a>
 							</li>
 							<li class="navItem">
-								<a href="getinvolved.html" class="navLink"> Get Involved</a>
+								<a href="getinvolved.html" class="navLink" tabindex="15"> Get Involved</a>
 							</li>
 						</ul>
 
 					</nav>
 				</div>
 				<section class="mainBox2">
-					<div class="post">
+					<div class="post" tabindex="16">
 						<div>
 							<div class="postHead">
 								<div class="postTitle">
@@ -94,39 +94,37 @@
 							<div class="postBody">
 								adipisicing elit. Labore rerum reprehenderit nulla corporis perspiciatis dolore laboriosam numquam quis soluta, quasi, qui, explicabo officia quaerat dolorum dolores debitis at. Facilis, hic! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab pariatur excepturi, quisquam iste laborum nam esse animi rerum fugit perferendis veniam optio! Sunt unde minus rerum harum molestiae minima voluptate? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deleniti sapiente consequuntur quod officia nam et earum dolorum deserunt sed? Consectetur illum magnam ipsum maxime minus blanditiis sunt doloribus ullam?
 							</div>
-							<a href="index.html">...Read More</a>
+							<a href="index.html" tabindex="17">...Read More</a>
 						</div>
 
-						<div class="clear"></div>
-
 						<hr>
 					</div>
-					<div class="post">
+					<div class="post" tabindex="18">
 						<h2>Celebrate your family: start here, with us</h2> adipisicing elit. Labore rerum reprehenderit nulla corporis perspiciatis dolore laboriosam numquam quis soluta, quasi, qui, explicabo officia quaerat dolorum dolores debitis at. Facilis, hic!
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, hic accusamus? Iusto necessitatibus eaque molestias placeat labore sunt ipsa modi rem inventore minima natus beatae asperiores fugit id, hic debitis?
-						<a href="index.html">...Read More</a>
+						<a href="index.html" tabindex="19">...Read More</a>
 						<hr>
 					</div>
-					<div class="post">
+					<div class="post" tabindex="20">
 						<h2>Family Collections now available</h2> adipisicing elit. Labore rerum reprehenderit nulla corporis perspiciatis dolore laboriosam numquam quis soluta, quasi, qui, explicabo officia quaerat dolorum dolores debitis at. Facilis, hic!
-						<a href="index.html">...Read More</a>
+						<a href="index.html" tabindex="21">...Read More</a>
 						<hr>
 					</div>
 				</section>
 				<section class="mainBox3">
 					<div class="adspace">
-						<div class="adtext">AD SPACE</div>
+						<div class="adtext" tabindex="22">AD SPACE</div>
 					</div>
 					<div class="adspace">
-						<div class="adtext">AD SPACE</div>
+						<div class="adtext" tabindex="23">AD SPACE</div>
 					</div>
 					<div class="adspace">
-						<div class="adtext">AD SPACE</div>
+						<div class="adtext" tabindex="24">AD SPACE</div>
 					</div>
 				</section>
 			</section>
-			<footer>
-				&copy 2022 Jason Wilborn for enRemembrance
+			<footer tabindex="25">
+				&copy; 2022 Jason Wilborn for enRemembrance
 			</footer>
 		</main>
 		<script>
@@ -138,18 +136,20 @@
 					nav.style.display = "block";
 				}
 			}
-			function clear(){
+
+			function clear() {
 				const profileMenu = document.getElementById("profileMenu");
 				if (profileMenu.style.display === "block") {
 					profileMenu.style.display = "none";
-			}}
+				}
+			}
 
 			function bigNav(bn) {
 				if (bn.matches) { // If media query matches
 					document.getElementById("navigation").style.display = "block";
 				}
 			}
-	
+
 
 			var bn = window.matchMedia("(min-width: 800px)")
 			bigNav(bn) // Call listener function at run time
